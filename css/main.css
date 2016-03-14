@@ -10,9 +10,7 @@ html, body {
 		html {
 			width: 100%;
 			height: 100%;
-			background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAATklEQVQYV2NkYGAwZmBgOMuAACA+CKCIMSIpADGRNaEYgKwQ3WQUjTCF6CYhWw2WAynEpgjmIpg7jUlSiM0TWK2GWUOUZ7ApxggeogIcABHJFtfoX9tJAAAAAElFTkSuQmCC) 
-			repeat;
-		    /*background: #888 url(https://raw.githubusercontent.com/auremoser/images/master/profile-wide.jpg) no-repeat center top fixed;*/
+			background: #888 url(/img/pollution.jpg) no-repeat center top fixed;;
 		    -webkit-background-size: cover;
 		    -moz-background-size: cover;
 		    -o-background-size: cover;
@@ -21,7 +19,7 @@ html, body {
 
 		h1 {
 			font-weight: 100;
-			font-size: 120px;
+			font-size: 110px;
 			margin: 120px 0 0 0;
 			text-align: center;
 			text-shadow: 1px 1px 10px #888;
@@ -33,18 +31,83 @@ html, body {
 		}
 
 		a {
-			color: #d9368d;
-
+			color: #cefe7d;
 		    -webkit-transition: all 0.3s ease-out;
 		    -moz-transition: all 0.3s ease-out;
 		    -o-transition: all 0.3s ease-out;
 		    transition: all 0.3s ease-out;
 		}
 		a:hover {
-			color: #36d9d4;
+			color: #05e09c;
 			text-shadow: 1px 1px 10px #888;
 		}
+/*Buttons*/
+		.button-container {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-flex-wrap: wrap;
+			    -ms-flex-wrap: wrap;
+			        flex-wrap: wrap;
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			margin: 60px auto;
+		}
 
+		.button {
+			border: 0 none;
+			border-radius: 24px;
+			padding: 12px 18px;
+			margin: 10px;
+			cursor: pointer;
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-webkit-justify-content: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			-webkit-box-align: center;
+			-webkit-align-items: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			-webkit-box-flex: 0;
+			-webkit-flex: 0 0 160px;
+			    -ms-flex: 0 0 160px;
+			        flex: 0 0 160px;
+			text-align: center;
+			line-height: 1.3;
+			font-size: 14px;
+			color: #fff;
+			text-transform: none;
+			font-weight: 500;
+			-webkit-transition: all 100ms ease-in-out;
+		  transition: all 100ms ease-in-out;
+		}
+		.button.-sun {
+		  	background: #cefe7d;
+		  	color: #005B76;
+		}
+		.button:hover {
+			background-color: #05E09C;
+		  	opacity: .9;
+		  	-webkit-transition: all 100ms ease;
+		  	transition: all 100ms ease;
+		}
+		.button:active {
+		  	background-color: #05E09C;
+		  	opacity: .75;
+		  	-webkit-transform: scale(0.97);
+		          	transform: scale(0.97);
+		  	-webkit-transition: all 100ms ease;
+		  	transition: all 100ms ease;
+		}
+		  
+/*Services*/
 		ul.services {
 			display: block;
 			margin: 0 auto;
@@ -67,12 +130,18 @@ html, body {
 			font-size: 120px;
 		}
 
+
+/*Device Queries*/
+
 		@media screen and (max-width: 1024px){
 			h1 {
 				font-size: 62px;
 			}
 			ul.services a {
 				font-size: 80px;
+			}
+			ul.activities a {
+				font-size: 40px;
 			}
 		}
 
@@ -88,6 +157,10 @@ html, body {
 			}
 			ul.services a {
 				font-size: 70px;
+				text-shadow: 1px 1px 10px #888;
+			}
+			ul.activites a  {
+				font-size: 35px;
 				text-shadow: 1px 1px 10px #888;
 			}
 		}
